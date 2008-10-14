@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+  	<groupId>com.idega.block.addon</groupId>
+  	<artifactId>com.idega.block.addon</artifactId>
+  	<version>4.0.3-SNAPSHOT</version>
+  </parent>
+  <groupId>com.idega.webapp.custom</groupId>
+  <artifactId>tal</artifactId>
+  <packaging>iwwar</packaging>
+  <version>4.0.0-SNAPSHOT</version>
+  <description>Custom ePlatform web application implementing Rator services for Tal</description>
+  <name>Tal.is</name>
+  <inceptionYear>2008</inceptionYear>
+  <organization>
+    <name>idega software</name>
+    <url>http://www.idega.com/</url>
+  </organization>
+  
+  <scm>
+    <!--
+    <connection>scm:cvs:ext:${user.name}@code.idega.com:/idega/cvs:${groupId}/${artifactId}/</connection>
+    <developerConnection>scm:cvs:ext:${user.name}@code.idega.com:/idega/cvs:${groupId}/${artifactId}/</developerConnection> 
+     -->
+    <connection>scm:cvs:ext:civilis@code.idega.com:/idega/cvs:com.idega.webapp.custom/felixclub/</connection>
+    <developerConnection>scm:cvs:ext:civilis@code.idega.com:/idega/cvs:com.idega.webapp.custom/felixclub/</developerConnection>
+  </scm>
+
+  <dependencies>
+  	<!-- ePlatform bundles -->
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.core</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.builder</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.faces</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>org.apache.myfaces</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.user</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.article</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.entity</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.image</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.media</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.navigation</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.rss</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.web2.0</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.content</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.developer</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.dwr</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.manager</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.setup</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.slide</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.webface</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.workspace</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>org.apache.axis</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>org.apache.slide</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.idegaweb.widget</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.graphics</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.hibernate</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.springframework</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.multidomain</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.platform</groupId>
+      <artifactId>com.idega.block.media</artifactId>
+    </dependency>
+    
+    <!--  ADDON STUFF -->
+	<dependency>
+      <groupId>com.idega.block.addon</groupId>
+      <artifactId>com.idega.block.elight</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.addon</groupId>
+      <artifactId>com.idega.block.websearch</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>com.idega.block.addon</groupId>
+      <artifactId>com.idega.telecom</artifactId>
+    </dependency>
+  </dependencies>
+
+  <distributionManagement>
+    <snapshotRepository>
+      <id>idega1snapshots</id>
+      <name>idega Maven2 Snapshot Repository</name>
+      <url>scp://repository.idega.com/var/www/webs/repository.idega.com/maven2</url>
+    </snapshotRepository>
+    <repository>
+      <id>idega1</id>
+      <name>idega Maven2 Repository</name>
+      <url>scp://repository.idega.com/var/www/webs/repository.idega.com/maven2</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+	<repository>
+      <id>idega1</id>
+      <name>idega maven2 repository</name>
+      <url>http://repository.idega.com/maven2/</url>
+      <!--snapshotPolicy>daily</snapshotPolicy-->
+    </repository>
+    <repository>
+      <id>idega2</id>
+      <name>idega public repository</name>
+      <url>http://repository.idega.com/maven/</url>
+      <!--snapshotPolicy>daily</snapshotPolicy-->
+      <layout>legacy</layout>
+    </repository>
+	  <repository>
+      <id>java.net</id>
+      <name>Sun Java Net Maven Repository</name>
+      <url>https://maven-repository.dev.java.net/nonav/repository/</url>
+      <!--snapshotPolicy>daily</snapshotPolicy-->
+	  <layout>legacy</layout>
+    </repository>
+  </repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+	      <id>idega1</id>
+	      <name>idega maven2 repository</name>
+	      <url>http://repository.idega.com/maven2/</url>
+	      <!--snapshotPolicy>daily</snapshotPolicy-->
+	    </pluginRepository>
+	    <pluginRepository>
+	        <id>tlc</id>
+	        <name>TLC Repository</name>
+	        <url>http://commons.ucalgary.ca/pub/m2</url>
+	    </pluginRepository>
+	</pluginRepositories>
+
+  <build>
+    <plugins>
+    
+    <plugin>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>maven-buildnumber-plugin</artifactId>
+      <version>0.9.4</version>
+      <configuration>
+			<format>{0,date,yyyyMMdd.HHmmss}</format>
+			<items>
+    		<item>timestamp</item>
+  			</items>
+		</configuration>
+      <executions>
+        <execution>
+          <phase>validate</phase>
+          <goals>
+            <goal>create</goal>
+          </goals>
+        </execution>
+      </executions>
+    </plugin>
+
+    
+      <plugin>
+        <groupId>com.idega.maven.plugins</groupId>
+        <artifactId>com.idega.maven.webapp</artifactId>
+        <extensions>true</extensions>
+		<configuration>
+          <archive>
+			<manifest>
+              <!--addClasspath>true</addClasspath-->
+              <addExtensions />
+            </manifest>
+			<manifestEntries>
+				<!--Implementation-Vendor>${pom.organization.name}</Implementation-Vendor-->
+				<Implementation-Vendor-Url>${pom.organization.url}</Implementation-Vendor-Url>
+				<Implementation-Build>${buildNumber}</Implementation-Build>
+				<Implementation-InceptionYear>${pom.inceptionYear}</Implementation-InceptionYear>
+			</manifestEntries>
+          </archive>          
+        </configuration>
+      </plugin>
+      <!-- 
+        <plugin>
+        <groupId>org.codehaus.mojo</groupId>
+        <artifactId>tomcat-maven-plugin</artifactId>
+        <configuration>
+        <url>http://formbuilder.idega.is/manager</url>
+        <server>formbuilder</server>
+        </configuration>
+        </plugin>
+      -->
+    </plugins>
+  </build>
+</project>
