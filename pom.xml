@@ -4,12 +4,12 @@
   <parent>
   	<groupId>com.idega.block.addon</groupId>
   	<artifactId>com.idega.block.addon</artifactId>
-  	<version>4.0.3-SNAPSHOT</version>
+  	<version>4.1.3-SNAPSHOT</version>
   </parent>
   <groupId>com.idega.webapp.custom</groupId>
   <artifactId>tal</artifactId>
   <packaging>iwwar</packaging>
-  <version>4.0.0-SNAPSHOT</version>
+  <version>4.1.3-SNAPSHOT</version>
   <description>Custom ePlatform web application implementing Rator services for Tal</description>
   <name>Tal.is</name>
   <inceptionYear>2008</inceptionYear>
@@ -116,10 +116,6 @@
     <dependency>
       <groupId>com.idega.block.platform</groupId>
       <artifactId>org.apache.slide</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>com.idega.block.platform</groupId>
-      <artifactId>com.idega.idegaweb.widget</artifactId>
     </dependency>
     <dependency>
       <groupId>com.idega.block.platform</groupId>
